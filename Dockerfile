@@ -16,6 +16,7 @@ RUN apk add --update \
   musl-dev \
   linux-headers \
   jq \
+  bash \
   && pip install --upgrade --no-cache-dir pip setuptools python-openstackclient \
   && apk del gcc musl-dev linux-headers libffi-dev \
   && rm -rf /var/cache/apk/*
